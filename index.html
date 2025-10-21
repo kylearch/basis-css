@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basis CSS - Professional CSS Framework</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Professional Header with Color Mode Selector -->
+    <header class="header">
+        <div class="container">
+            <nav class="header-nav">
+                <h1 class="framework-name" id="currentName">Basis CSS</h1>
+                <div class="color-mode-selector">
+                    <button class="mode-btn active" data-mode="monochrome">Monochrome</button>
+                    <button class="mode-btn" data-mode="one-color">1 Color</button>
+                    <button class="mode-btn" data-mode="two-colors">2 Colors</button>
+                    <button class="mode-btn" data-mode="three-colors">3 Colors</button>
+                </div>
+            </nav>
+            <div class="hero-section">
+                <div class="name-showcase">
+                    <div class="name-grid">
+                        <button class="name-card active" data-name="basis">Basis CSS</button>
+                        <button class="name-card" data-name="basiscss">BasisCSS</button>
+                        <button class="name-card" data-name="basis-framework">Basis Framework</button>
+                        <button class="name-card" data-name="basis-design">Basis Design</button>
+                        <button class="name-card" data-name="basiscss-ui">BasisCSS UI</button>
+                        <button class="name-card" data-name="basis-ui">Basis UI</button>
+                    </div>
+                </div>
+                <div class="hero-content">
+                    <h2 class="hero-title">Professional design that adapts to your brand</h2>
+                    <p class="hero-description">Industry-agnostic aesthetic with intelligent color hierarchy. Works beautifully in monochrome or full color.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Color Configurator -->
+    <section class="color-configurator">
+        <div class="container">
+            <div class="configurator-header">
+                <h3>Adaptive Color System</h3>
+                <p class="current-mode-description" id="modeDescription">Sophisticated offblack and offwhite palette. Timeless, professional, works in any industry.</p>
+            </div>
+            <div class="color-controls" id="colorControls">
+                <div class="color-input-group" id="accent-group" style="display: none;">
+                    <label>Accent Color</label>
+                    <div class="input-row">
+                        <input type="color" id="accentColor" value="#3b82f6">
+                        <input type="text" id="accentColor-text" value="#3b82f6" class="color-text">
+                    </div>
+                </div>
+                <div class="color-input-group" id="primary-group" style="display: none;">
+                    <label>Primary Color</label>
+                    <div class="input-row">
+                        <input type="color" id="primaryColor" value="#3b82f6">
+                        <input type="text" id="primaryColor-text" value="#3b82f6" class="color-text">
+                    </div>
+                </div>
+                <div class="color-input-group" id="secondary-group" style="display: none;">
+                    <label>Secondary Color</label>
+                    <div class="input-row">
+                        <input type="color" id="secondaryColor" value="#8b5cf6">
+                        <input type="text" id="secondaryColor-text" value="#8b5cf6" class="color-text">
+                    </div>
+                </div>
+                <div class="color-input-group" id="tertiary-group" style="display: none;">
+                    <label>Tertiary Color</label>
+                    <div class="input-row">
+                        <input type="color" id="tertiaryColor" value="#ec4899">
+                        <input type="text" id="tertiaryColor-text" value="#ec4899" class="color-text">
+                    </div>
+                </div>
+            </div>
+            <div class="color-preview">
+                <div class="preview-palette" id="colorPreview">
+                    <div class="preview-swatch" data-color="bg">BG</div>
+                    <div class="preview-swatch" data-color="surface">Surface</div>
+                    <div class="preview-swatch" data-color="text">Text</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kitchen Sink Components -->
+    <main class="kitchen-sink">
+        <div class="container">
+            <h2>Component Library</h2>
+            
+            <!-- Buttons Section -->
+            <section class="component-section">
+                <h3>Buttons</h3>
+                <div class="component-demo">
+                    <div class="component-variants">
+                        <button class="btn btn-primary">Primary Button</button>
+                        <button class="btn btn-secondary">Secondary Button</button>
+                        <button class="btn btn-tertiary" style="display: none;">Tertiary Button</button>
+                        <button class="btn btn-outline">Outline Button</button>
+                        <button class="btn btn-ghost">Ghost Button</button>
+                        <button class="btn btn-primary btn-sm">Small</button>
+                        <button class="btn btn-primary btn-lg">Large</button>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code>&lt;button class="btn btn-primary"&gt;Primary Button&lt;/button&gt;
+&lt;button class="btn btn-secondary"&gt;Secondary Button&lt;/button&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Cards Section -->
+            <section class="component-section">
+                <h3>Cards</h3>
+                <div class="component-demo">
+                    <div class="component-variants">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Default Card</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>This is a default card with basic styling.</p>
+                                <button class="btn btn-primary">Action</button>
+                            </div>
+                        </div>
+                        <div class="card card-primary">
+                            <div class="card-header">
+                                <h4>Primary Card</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>This card uses the primary color theme.</p>
+                                <button class="btn btn-secondary">Action</button>
+                            </div>
+                        </div>
+                        <div class="card card-secondary">
+                            <div class="card-header">
+                                <h4>Secondary Card</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>This card uses the secondary color theme.</p>
+                                <button class="btn btn-primary">Action</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code>&lt;div class="card"&gt;
+  &lt;div class="card-header"&gt;
+    &lt;h4&gt;Card Title&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;div class="card-body"&gt;
+    &lt;p&gt;Card content&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Alerts Section -->
+            <section class="component-section">
+                <h3>Alerts</h3>
+                <div class="component-demo">
+                    <div class="component-variants">
+                        <div class="alert alert-primary">
+                            <strong>Primary Alert:</strong> This is a primary alert message.
+                        </div>
+                        <div class="alert alert-secondary">
+                            <strong>Secondary Alert:</strong> This is a secondary alert message.
+                        </div>
+                        <div class="alert alert-tertiary">
+                            <strong>Tertiary Alert:</strong> This is a tertiary alert message.
+                        </div>
+                        <div class="alert alert-success">
+                            <strong>Success:</strong> Operation completed successfully!
+                        </div>
+                        <div class="alert alert-danger">
+                            <strong>Danger:</strong> Something went wrong.
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code>&lt;div class="alert alert-primary"&gt;
+  &lt;strong&gt;Alert:&lt;/strong&gt; Your message here.
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Forms Section -->
+            <section class="component-section">
+                <h3>Form Elements</h3>
+                <div class="component-demo">
+                    <div class="component-variants">
+                        <div class="form-group">
+                            <label class="form-label">Text Input</label>
+                            <input type="text" class="form-input" placeholder="Enter text here">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Select Dropdown</label>
+                            <select class="form-select">
+                                <option>Choose an option</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Textarea</label>
+                            <textarea class="form-textarea" rows="3" placeholder="Enter your message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="check1" class="form-checkbox">
+                                <label for="check1">Checkbox option</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="radio1" name="radio" class="form-radio">
+                                <label for="radio1">Radio option 1</label>
+                                <input type="radio" id="radio2" name="radio" class="form-radio">
+                                <label for="radio2">Radio option 2</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code>&lt;div class="form-group"&gt;
+  &lt;label class="form-label"&gt;Text Input&lt;/label&gt;
+  &lt;input type="text" class="form-input" placeholder="Enter text"&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Switch/Toggle Section -->
+            <section class="component-section">
+                <h3>Switches &amp; Toggles</h3>
+                <div class="component-demo">
+                    <div class="component-variants">
+                        <div class="switch-group">
+                            <label class="switch">
+                                <input type="checkbox" class="switch-input">
+                                <span class="switch-slider"></span>
+                                <span class="switch-label">Default Switch</span>
+                            </label>
+                        </div>
+                        <div class="switch-group">
+                            <label class="switch switch-primary">
+                                <input type="checkbox" class="switch-input" checked>
+                                <span class="switch-slider"></span>
+                                <span class="switch-label">Primary Switch</span>
+                            </label>
+                        </div>
+                        <div class="switch-group">
+                            <label class="switch switch-secondary">
+                                <input type="checkbox" class="switch-input">
+                                <span class="switch-slider"></span>
+                                <span class="switch-label">Secondary Switch</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code>&lt;label class="switch"&gt;
+  &lt;input type="checkbox" class="switch-input"&gt;
+  &lt;span class="switch-slider"&gt;&lt;/span&gt;
+  &lt;span class="switch-label"&gt;Toggle Label&lt;/span&gt;
+&lt;/label&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Grid System -->
+            <section class="component-section">
+                <h3>Grid System</h3>
+                <div class="component-demo">
+                    <div class="component-variants">
+                        <div class="grid grid-2">
+                            <div class="grid-item">Grid Item 1</div>
+                            <div class="grid-item">Grid Item 2</div>
+                        </div>
+                        <div class="grid grid-3">
+                            <div class="grid-item">Grid Item 1</div>
+                            <div class="grid-item">Grid Item 2</div>
+                            <div class="grid-item">Grid Item 3</div>
+                        </div>
+                        <div class="grid grid-4">
+                            <div class="grid-item">Item 1</div>
+                            <div class="grid-item">Item 2</div>
+                            <div class="grid-item">Item 3</div>
+                            <div class="grid-item">Item 4</div>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code>&lt;div class="grid grid-3"&gt;
+  &lt;div class="grid-item"&gt;Item 1&lt;/div&gt;
+  &lt;div class="grid-item"&gt;Item 2&lt;/div&gt;
+  &lt;div class="grid-item"&gt;Item 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tables -->
+            <section class="component-section">
+                <h3>Tables</h3>
+                <div class="component-demo">
+                    <div class="component-variants">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Role</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>john@example.com</td>
+                                    <td>Admin</td>
+                                    <td><span class="status status--success">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Jane Smith</td>
+                                    <td>jane@example.com</td>
+                                    <td>Editor</td>
+                                    <td><span class="status status--success">Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Bob Johnson</td>
+                                    <td>bob@example.com</td>
+                                    <td>Viewer</td>
+                                    <td><span class="status status--warning">Pending</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code>&lt;table class="table"&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Header&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Images -->
+            <section class="component-section">
+                <h3>Images &amp; Media</h3>
+                <div class="component-demo">
+                    <div class="component-variants">
+                        <div class="img-wrapper">
+                            <img src="https://placehold.co/400x300/e5e5e5/737373?text=Placeholder" alt="Placeholder" class="img-fluid">
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="https://placehold.co/200x200/e5e5e5/737373?text=Square" alt="Square" class="img-rounded">
+                        </div>
+                        <div class="img-wrapper">
+                            <img src="https://placehold.co/150x150/e5e5e5/737373?text=Circle" alt="Circle" class="img-circle">
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code>&lt;img src="..." class="img-fluid" alt="..."&gt;
+&lt;img src="..." class="img-rounded" alt="..."&gt;
+&lt;img src="..." class="img-circle" alt="..."&gt;</code></pre>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal Example -->
+    <div class="modal" id="exampleModal">
+        <div class="modal-backdrop" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Example Modal</h4>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>This is an example modal using the framework's styling.</p>
+                <div class="modal-actions">
+                    <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                    <button class="btn btn-primary">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sophisticated Design</h4>
+                    <p>Subtle, refined aesthetics that scale from startups to enterprises. Works beautifully in monochrome or full color across any industry.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Intelligent Hierarchy</h4>
+                    <p>Professional color distribution with soft shadows, gentle radius, and thoughtful spacing. Maximum elegance with minimal complexity.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Versatile &amp; Scalable</h4>
+                    <p>From minimal monochrome to rich color palettes. Adapts to your brand while maintaining sophisticated, industry-agnostic appeal.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Documentation</a>
+                    <a href="#" class="footer-link">GitHub</a>
+                    <a href="#" class="footer-link">Examples</a>
+                </div>
+                <p>&copy; 2025 Basis CSS (basiscss.com) - Industry-Agnostic Design</p>
+                <button class="btn btn-ghost" onclick="openModal()">View Code Examples</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "name": "basis-css",
+  "version": "0.1.0",
+  "description": "Professional CSS framework with adaptive color system - supports monochrome, one-color, two-colors, and three-colors modes with automatic light/dark theme switching",
+  "main": "app.js",
+  "style": "style.css",
+  "files": [
+    "style.css",
+    "app.js",
+    "README.md"
+  ],
+  "keywords": [
+    "css",
+    "framework",
+    "design-system",
+    "color-system",
+    "adaptive-colors",
+    "dark-mode",
+    "light-mode",
+    "ui",
+    "components",
+    "basis",
+    "basis-css"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
