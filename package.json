@@ -1,16 +1,44 @@
 {
   "name": "basis-css",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.2.0",
+  "description": "Professional CSS framework with adaptive color system",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "deploy": "vercel",
     "deploy:prod": "vercel --prod"
   },
+  "keywords": [
+    "css",
+    "framework",
+    "design-system",
+    "color-system",
+    "adaptive-colors",
+    "dark-mode",
+    "light-mode",
+    "ui",
+    "components",
+    "basis"
+  ],
+  "author": "Kyle Arch",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylearch/basis-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kylearch/basis-css/issues"
+  },
+  "homepage": "https://basiscss.com",
+  "files": [
+    "style.css",
+    "app.js",
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
   "dependencies": {},
   "devDependencies": {
     "typescript": "^5.5.3"
-  },
-  "private": true
+  }
 }
