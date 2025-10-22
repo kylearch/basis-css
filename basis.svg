@@ -1,0 +1,5 @@
+<svg class="logo-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" role="img" aria-label="Pyramid logo mark">
+    <polygon class="logo-layer-3" fill="#e2e8f0" points="100,30 120,60 80,60" />
+    <polygon class="logo-layer-2" fill="#cbd5e1" points="75,70 125,70 145,100 55,100" />
+    <polygon class="logo-layer-1" fill="#1e293b" points="50,110 150,110 170,140 30,140" />
+</svg>
