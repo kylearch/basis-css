@@ -37,7 +37,6 @@
     "README.md",
     "LICENSE"
   ],
-  "dependencies": {},
   "devDependencies": {
     "typescript": "^5.5.3"
   }
