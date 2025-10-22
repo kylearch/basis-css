@@ -1,0 +1,26 @@
+{
+  "name": "basis-css/basis-css",
+  "description": "Professional CSS framework with adaptive color system - supports monochrome, one-color, two-colors, and three-colors modes with automatic light/dark theme switching",
+  "type": "library",
+  "keywords": [
+    "css",
+    "framework",
+    "design-system",
+    "color-system",
+    "adaptive-colors",
+    "dark-mode",
+    "light-mode",
+    "ui",
+    "components",
+    "basis"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kyle Arch",
+      "email": "kaarch@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {}
+}
